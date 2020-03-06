@@ -1,4 +1,8 @@
 <template>
+  <div class="portfolio-empty" v-if="portfolio.length===0">
+    Your portfolio is empty
+  </div>
+  <div v-else>
   <div v-if="loading === true">
     <vue-circle></vue-circle>
   </div>
@@ -34,6 +38,7 @@
         <br />
       </div>
     </div>
+  </div>
   </div>
   </div>
 </template>
@@ -94,6 +99,10 @@ export default {
 .card-header {
   background-color: #bbe1fa;
   color: #3282b8;
+}
+
+.portfolio-empty{
+  text-align: center;
 }
 
 span {
