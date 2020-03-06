@@ -103,6 +103,7 @@ export default {
 
 .portfolio-empty{
   text-align: center;
+  
 }
 
 span {
